@@ -30,3 +30,9 @@
 *.exe
 *.out
 *.app
+# pixi environments
+.pixi
+*.egg-info
+
+# VSCode
+.vscode
