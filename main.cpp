@@ -4,10 +4,14 @@
 #include "src/Batch.C"
 #include "src/LegendreTally.C"
 
+#include <pugixml.hpp>
+
+
 #include <iostream>
 
 int main()
 {
+    /*
     Cell* c1 = new Cell(0.0, 50.0, 0.12,0.05,0.15);
     Cell* c2 = new Cell(50.0, 100.0, 0.1,0.05,.12);
     std::vector<Cell*> cell_vector{c1,c2};
@@ -18,4 +22,8 @@ int main()
     tally.expandBatch(b.getFissionSites());
     tally.FinalizeFlux(1,200);
     std::cout<<b.getBatchKeff()<<std::endl;
+    */
+    pugi::xml_document file;
+    pugi::xml_parse_result result = file.load_file("model.xml");
+
 }
