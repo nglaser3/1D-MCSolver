@@ -4,7 +4,7 @@
 #include "src/Batch.C"
 #include "src/LegendreTally.C"
 
-#include <pugixml.hpp>
+#include "pugixml/src/pugixml.cpp"
 
 
 #include <iostream>
@@ -25,5 +25,4 @@ int main()
     */
     pugi::xml_document file;
     pugi::xml_parse_result result = file.load_file("model.xml");
-
 }
