@@ -102,11 +102,12 @@ void LegendreTally::FinalizeFlux(int batches, int accuracy)
     
     for (int i = 0; i <= accuracy; i++)
     {
-        _x0 = (_right-_left)*(i/accuracy)+_left;
+        double _i = i;
+        _x0 = (_right-_left)*(_i/accuracy)+_left;
         _xlocs.push_back(_x0);
         _yvals.push_back(calc_y(_x0,_order,end_coeffs));
     }
-    printresults(_xlocs,_yvals);
+    //printresults(_xlocs,_yvals);
 }
 
 

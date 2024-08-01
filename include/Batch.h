@@ -8,16 +8,18 @@ class Batch
 private:
     std::vector<double> fission_sites;
     std::vector<double> birth_sites;
-    std::vector<double> k_eff;
+    std::pair<double,double> bounds;
+    double k_eff;
     std::vector<double> scalar_flux;
 public:
     Batch(std::vector<double> sites_for_birth, long num_particles, Geometry geom);
     ~Batch() = default;
     double getBatchKeff();
 
-    std::vector<double> getBatchFlux();
+    std::vector<double> getFissionSites();
+    //std::vector<double> getBatchFlux();
 
-    double getBatchAverageFlux();
+    //double getBatchAverageFlux();
 
 };
 

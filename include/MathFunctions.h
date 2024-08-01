@@ -13,23 +13,14 @@ double sampleDirection()
     return (2*Random() - 1);
 }
 
-int sampleInteraction(double _x0, std::vector<double> _props)
+int sampleInteraction(double _x0, double xs, double tot)
 {
-    double _abs{_props[0]}; 
-    double _sct{_props[1]}; 
-    double _fis{_props[2]}; 
-    double _tot{_props[3]};
-
     double _r{Random()};
 
-    if (_r<_abs/_tot) 
+    if (_r<xs/tot) 
         return 0;
 
-    else if (_r< _sct/_tot) 
-        return 1;
-
-    else 
-        return 2; 
+    return 1;
 }
 
 double factorial(int input)

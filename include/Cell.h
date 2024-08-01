@@ -14,6 +14,7 @@ public:
     double getSct();
     double getFis();
     double getTot();
+    std::vector<double> getPropsVec();
     ~Cell() = default;
 };
 

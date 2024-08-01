@@ -11,5 +11,6 @@ public:
     Geometry(std::vector<Cell*> & _cells);
     int getCellIndex(double _x0);
     Cell* getCell(int index);
+    std::pair<double,double> getBounds();
     ~Geometry() = default;
 };

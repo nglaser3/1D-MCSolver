@@ -34,3 +34,8 @@ double Cell::getTot()
 {
     return _props[3];
 }
+
+std::vector<double> Cell::getPropsVec()
+{
+    return _props;
+}

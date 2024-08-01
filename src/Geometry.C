@@ -1,4 +1,5 @@
 #include "../include/Geometry.h"
+
 Geometry::Geometry(std::vector<Cell*> & _cells)
  : cells{_cells}
  {
@@ -22,4 +23,10 @@ Geometry::Geometry(std::vector<Cell*> & _cells)
  Cell* Geometry::getCell(int index)
  {
     return cells[index];
+ }
+
+ std::pair<double,double> Geometry::getBounds()
+ {
+   std::pair<double,double> pair{cells.front()->getLeftBound(),cells.back()->getRightBound()};
+   return pair;
  }

@@ -10,7 +10,8 @@ private:
 
 public:
     Particle(double _x0, Geometry _geom):_location{_x0},_geometry{_geom}{};
-    double move();
+    std::pair<double, int> move();
+    int didFission();
     int cellIndex();
     ~Particle() = default;
 };
