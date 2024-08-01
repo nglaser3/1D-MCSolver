@@ -7,7 +7,8 @@ channels = ["conda-forge"]
 platforms = ["osx-arm64", "linux-64"]
 
 [tasks]
-compile = "g++ -std=c++11 -o mc.exe main.cpp"
+compile =  "mkdir build; cd build; cmake ..; cmake --build .; cd ../"
 
 [dependencies]
 pugixml = ">=1.14,<2"
+cmake = ">=3.30.1,<4"

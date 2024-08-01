@@ -30,9 +30,14 @@
 *.exe
 *.out
 *.app
+MCSolve
+
 # pixi environments
 .pixi
 *.egg-info
 
 # VSCode
 .vscode
+
+#CMake
+build
