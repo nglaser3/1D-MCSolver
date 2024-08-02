@@ -1,0 +1,10 @@
+<Model>
+  <Cells>
+    <Cell1>0.0, 50.0, .12, .05, .15</Cell1>
+    <Cell2>50.0, 100.0, .1, .05, .12</Cell2>
+  </Cells>
+  <Settings>
+    <Legendre>10, 0.0, 100.0</Legendre>
+    <Simulation>10, 100</Simulation>
+  </Settings>
+</Model>

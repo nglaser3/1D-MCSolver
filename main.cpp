@@ -25,4 +25,7 @@ int main()
     */
     pugi::xml_document file;
     pugi::xml_parse_result result = file.load_file("model.xml");
+    std::cout<<"hello"<<std::endl;
+    std::cout<<file.child("Cells").attribute("Cell1").value();
+    
 }
