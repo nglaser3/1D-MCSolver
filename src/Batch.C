@@ -5,7 +5,7 @@
 #include <iostream>
 
 Batch::Batch(std::vector<double> sites_for_birth, long num_particles, Geometry geom)
-  :  birth_sites{sites_for_birth}
+  :  birth_sites(sites_for_birth)
 {
     bounds = geom.getBounds();
     for (long i = 0; i < num_particles; i++)

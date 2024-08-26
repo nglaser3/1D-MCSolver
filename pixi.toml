@@ -9,7 +9,7 @@ platforms = ["osx-arm64", "linux-64"]
 [tasks]
 initialize = "git submodule update --init"
 clean = "rm -rf build; rm MCSolve"
-compile =  "mkdir build; cd build; cmake ..; cmake --build .; cd ../"
+compile =  "mkdir build; cd build; cmake ..; cmake --build .; mv MCSolve ../MCSolve;  cd ../"
 
 [dependencies]
 cmake = ">=3.30.1,<4"

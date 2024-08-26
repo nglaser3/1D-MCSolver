@@ -1,7 +1,7 @@
 #include "../include/Geometry.h"
 
 Geometry::Geometry(std::vector<Cell*> & _cells)
- : cells{_cells}
+ : cells(_cells)
  {
     cell_bounds = {_cells[0]->getLeftBound()};
     for (Cell* _cell : _cells)

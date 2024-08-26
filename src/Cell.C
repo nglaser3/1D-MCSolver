@@ -1,8 +1,8 @@
 #include "../include/Cell.h"
 
 Cell::Cell(double _left, double _right, double _absxs, double _sctxs, double _fisxs)
-  : _bounds{_left,_right},
-    _props{_absxs,_sctxs,_fisxs,_absxs+_sctxs+_fisxs}
+  : _bounds(_left,_right),
+    _props({_absxs,_sctxs,_fisxs,_absxs+_sctxs+_fisxs})
 {
 }
 

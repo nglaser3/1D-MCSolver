@@ -7,13 +7,13 @@
 LegendreTally::LegendreTally(
     int order, double left, double right, Geometry & _geom, 
     std::vector<double> interaction_xs)
-: _order{order},  
+: _order(order),  
   expanded_coeffs(order+1,0.0), 
   end_coeffs(order+1,0.0),
-  _left{left},
-  _right{right},
-  xs{interaction_xs},
-  geom{_geom}
+  _left(left),
+  _right(right),
+  xs(interaction_xs),
+  geom(_geom)
 {
 }
 
